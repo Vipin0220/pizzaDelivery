@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="Times New Roman">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Wow Pizza Shop Website Design</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <section class="flex">
+
+      <a href="#home" class="logo">
+         <img src="images/wowpizza.jpeg" alt="" width="50px" height="" style="margin: 10px;">
+      </a>
+
+      <nav class="navbar">
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#menu">Menu</a>
+         <a href="#order">Order</a>
+      </nav>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="order-btn" class="fas fa-box"></div>
+         <div id="cart-btn" class="fas fa-shopping-cart"><span></span></div>
+      </div>
+
+   </section>
+
+</header>
+
+<!-- header section ends -->
+
+<div class="user-account">
+
+   <section>
+
+      <div id="close-account"><span>close</span></div>
+
+      <div class="user">
+         <p><span>you are logged in now!</span></p>
+      </div>
+
+      <div class="display-orders">
+         <p>pizza-1 <span>( ₹200/- x 2 )</span></p>
+         <p>pizza 03 <span>( ₹299/- x 1 )</span></p>
+         <p>pizza 06 <span>( ₹499/- x 4 )</span></p>
+         <p>pizza 07 <span>( ₹199/- x 1 )</span></p>
+      </div>
+
+      <div class="flex">
+
+         <form action="" method="post">
+            <h3>login now</h3>
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="submit" value="login now" name="login" class="btn">
+         </form>
+
+         <form action="" method="post">
+            <h3>Register now</h3>
+            <input type="text" name="name" required class="box" placeholder="enter your name" maxlength="20">
+            <input type="email" name="email" required class="box" placeholder="enter your email" maxlength="50">
+            <input type="password" name="pass" required class="box" placeholder="enter your password" maxlength="20">
+            <input type="password" name="cpass" required class="box" placeholder="confirm your password" maxlength="20">
+            <input type="submit" value="Register now" name="Register" class="btn">
+         </form>
+
+      </div>
+
+   </section>
+
+</div>
+
+<div class="my-orders">
+
+   <section>
+
+      <div id="close-orders"><span>close</span></div>
+
+      <h3 class="title"> My orders </h3>
+
+      <div class="box">
+         <p>placed on : <span>05/05/2022</span> </p>
+         <p>name : <span>vipin yadav</span> </p>
+         <p>number : <span>9876543210</span></p>
+         <p>address : <span>shop no. 139, bulding no. 2, lucknow, uttarpradesh, india - 226021</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span>pizza 01 ₹200/- x 2, pizza 03 ₹299/- x 1, pizza 06 ₹499/- x 4, pizza 07, ₹199/- x 1</span></p>
+         <p>total price : <span>₹11/-</span></p>
+         <p>payment status : <span style="color: var(--blue);">pending</span> </p>
+      </div>
+
+      <div class="box">
+         <p>placed on : <span>06/04/2022</span> </p>
+         <p>name : <span>vivek </span> </p>
+         <p>number : <span>987654321</span></p>
+         <p>address : <span>shop no. 139, bulding no. 2, lucknow, uttarpradesh, india - 226021</span></p>
+         <p>payment method : <span>cash on delivery</span></p>
+         <p>your orders : <span>pizza 01 ₹200/- x 2, pizza 03 ₹299/- x 1, pizza 06 ₹499/- x 4, pizza 07, ₹199/- x 1</span></p>
+         <p>total price : <span>₹11/-</span></p>
+         <p>payment status : <span style="color: var(--blue);">pending</span> </p>
+      </div>
+
+   </section>
+
+</div>
+
+<div class="shopping-cart">
+
+   <section>
+
+      <div id="close-cart"><span>close</span></div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="content">
+            <p>pizza-1 <span>( ₹200/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="content">
+            <p>pizza-3 <span>( ₹299/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="content">
+            <p>pizza-6 <span>( ₹499/- x 2 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="2" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <div class="box">
+         <a href="#" class="fas fa-times"></a>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="content">
+            <p>pizza-7 <span>( ₹199/- x 1 )</span></p>
+            <form action="" method="post">
+               <input type="number" class="qty" name="qty" min="1" value="1" max="100">
+               <button type="submit" class="fas fa-edit" name="update_qty"></button>
+            </form>
+         </div>
+      </div>
+
+      <a href="#order" class="btn">order now</a>
+
+   </section>
+
+</div>
+
+<div class="home-bg">
+
+   <section class="home" id="home">
+
+      <div class="slide-container">
+
+         <div class="slide active">
+            <div class="image">
+               <img src="images/home-img-1.png" alt="">
+            </div>
+            <div class="content">
+               <h3>homemade Pepperoni Pizza</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-2.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Pizza With Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+         <div class="slide">
+            <div class="image">
+               <img src="images/home-img-3.png" alt="">
+            </div>
+            <div class="content">
+               <h3>Mascarpone And Mushrooms</h3>
+               <div class="fas fa-angle-left" onclick="prev()"></div>
+               <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+         </div>
+
+      </div>
+
+   </section>
+
+</div>
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <h1 class="heading">about us</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <img src="images/about-1.svg" alt="">
+         <h3>made with love</h3>
+         <p>Monday & Wednesday<br>
+            Margherita: ( Pizza Sauce & Cheese )
+            American Heat: ( Jalapenos, Onion, Capsicum, Sweet Corn & Cheese)
+            Red Indian: ( Hungarian Pepper, Paneer, Capsicum & Cheese).
+            
+          <br> Tuesday & Friday <br>
+            Margherita: ( Pizza Sauce & Cheese }
+            Paneer Tikka: ( Cheese, Paneer Tikka, Caramelized Onion, Capsicum on a bed of special gravy)
+            Margherita: ( Pizza Sauce & Cheese )
+            Hot ‘n’ Spicy: ( Tandoori Paneer, Onion, & Cheese)
+            Party Lovers: ( Capsicum, Sweet Corn, Tomato, Chilly & Cheese)
+            
+            </p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-2.svg" alt="">
+         <h3>30 minutes delivery</h3>
+         <p>Delivery guarantee applicable at the first barrier point. We do not penalize its drivers for late delivery. 30 minutes or free not applicable when store operating conditions or not suitable , to be announced at the time of order taking. Our Pizzas preserves the right to withdraw the service guarantee without prior information.
+            30 minutes delivery guarantee not applicable on New years eve,on Ganesh festival , Christmas and Durga Pooja , the service guarantee may be withdrawn temporarily in view of difficult operating conditions for delivery. Conditions apply.</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+      <div class="box">
+         <img src="images/about-3.svg" alt="">
+         <h3>share with freinds</h3>
+         <p>You will receive a referral credit within 7 days after the new pizza user’s purchase was made.If your next payment is a rebill on an active account, the credit will be given in the form of a refund. Participation in the pizza Referral Program may require you to submit personal information about you and the users you refer, such as name and email address. You agree to receive communications from us with regard to your participation in the pizza Referral Program, and to allow us to communicate with referred users about your participation.!</p>
+         <a href="#menu" class="btn">our menu</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- menu section starts  -->
+
+<section id="menu" class="menu">
+
+   <h1 class="heading">our menu</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="price">₹<span>299</span>/-</div>
+         <img src="images/pizza-1.jpg" alt="">
+         <div class="name">pizza 1</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>499</span>/-</div>
+         <img src="images/pizza-2.jpg" alt="">
+         <div class="name">pizza 2</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>200</span>/-</div>
+         <img src="images/pizza-3.jpg" alt="">
+         <div class="name">pizza 3</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>399</span>/-</div>
+         <img src="images/pizza-4.jpg" alt="">
+         <div class="name">pizza 4</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>299</span>/-</div>
+         <img src="images/pizza-5.jpg" alt="">
+         <div class="name">pizza 5</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>499</span>/-</div>
+         <img src="images/pizza-6.jpg" alt="">
+         <div class="name">pizza 6</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>299</span>/-</div>
+         <img src="images/pizza-7.jpg" alt="">
+         <div class="name">pizza 7</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>399</span>/-</div>
+         <img src="images/pizza-8.jpg" alt="">
+         <div class="name">pizza 8</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+      <div class="box">
+         <div class="price">₹<span>499</span>/-</div>
+         <img src="images/pizza-9.jpg" alt="">
+         <div class="name">pizza 9</div>
+         <form action="" method="post">
+            <input type="number" min="1" max="100" value="1" class="qty" name="qty">
+            <input type="submit" value="add to cart" name="add_to_cart" class="btn">
+         </form>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <h1 class="heading">order now</h1>
+
+   <form action="" method="post">
+
+      <div class="display-orders">
+         <p>order your favourite Pizza</p>
+      </div>
+
+      <div class="flex">
+         <div class="inputBox">
+            <span>your name :</span>
+            <input type="text" name="name" class="box" required placeholder="enter your name" maxlength="20">
+         </div>
+         <div class="inputBox">
+            <span>your number :</span>
+            <input type="number" name="number" class="box" required placeholder="enter your number" min="0">
+         </div>
+         <div class="inputBox">
+            <span>Payment Method</span>
+            <select name="method" class="box">
+               <option value="cash on delivery">cash on delivery</option>
+               <option value="credit card">credit card</option>
+               <option value="paytm">paytm</option>
+               <option value="phonpe">phonpe</option>
+            </select>
+         </div>
+         <div class="inputBox">
+            <span>Address line 01 :</span>
+            <input type="text" name="flat" class="box" required placeholder="e.g. flat no." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>Address line 02 :</span>
+            <input type="text" name="street" class="box" required placeholder="e.g. street name." maxlength="50">
+         </div>
+         <div class="inputBox">
+            <span>Pin code :</span>
+            <input type="number" name="pin_code" class="box" required placeholder="e.g. 123456" min="0">
+         </div>
+      </div>
+
+      <input type="submit" value="Order now" class="btn" name="Order">
+
+   </form>
+
+</section>
+
+<!-- order section ends -->
+
+<!-- faq section starts  -->
+
+<section class="faq" id="faq">
+
+   <h2 class="heading">Faq</h2>
+
+   <div class="accordion-container">
+
+      <div class="accordion active">
+         <div class="accordion-heading">
+            <span>how does it work?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            As online ordering becomes standard in the industry, you should explore other sales channels. One of the rising sources of new orders comes from mobile ordering
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>how long does it take for delivery?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            It takes 4 minutes (order to oven) + 6 minutes in the oven + 5 minutes (cutting, packing, pickup) + 8 minutes (delivery) = 23 minutes. Rest 7 minutes we keep as a buffer for our executives owing to unforeseen circumstances. Hence, the 30 minutes pizza home delivery promise.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Can I order for huge parties?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+            Yes you can order for huge parties and wedding parties also.
+         </p>
+      </div>
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>How much protein it contains?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p class="accrodion-content">
+           Yes ,A slice of cheese pizza contains 17.9 grams of fat, of which 6.2 grams are saturated. A slice of meat and vegetable pizza has 20.6 grams of fat, of which 7.3 grams are saturated.
+         </p>
+      </div>
+
+
+      <div class="accordion">
+         <div class="accordion-heading">
+            <span>Is it cooked with oil?</span>
+            <i class="fas fa-angle-down"></i>
+         </div>
+         <p1 class="accrodion-content">
+            Yes, this is cooked with low cholestrol oil and good for heath.And also used butter cheese many more ingredients.
+         </p1>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- faq section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <i class="fas fa-Contact"></i>
+         <h3>Contact number</h3>
+         <p>+91-7607256653</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-map-marker-alt"></i>
+         <h3> Address</h3>
+         <p>lucknow, india - 226021</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-clock"></i>
+         <h3>Opening hours</h3>
+         <p>09:00am to 10:00pm</p>
+      </div>
+
+      <div class="box">
+         <i class="fas fa-envelope"></i>
+         <h3>Email address</h3>
+         <p>pizza01@gmail.com</p>
+      </div>
+
+   </div>
+
+   <div class="credit">
+      &copy; copyright @ 2022 by <span>mr. vipin and vivek </span> | all rights reserved!
+   </div>
+
+</section>
+
+<!-- footer section ends -->
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<!--INSERT INTO `online-pizza` (`enter your name`, `enter your email`, `enter your password`, `confirm your password`, `other`) VALUES ('vipin kr yadav', 'pizza01@gmail.com', '123456@', '123456@', 'you have registered sucessfully.');-->
+
+</body>
+</html>
